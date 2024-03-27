@@ -1,0 +1,79 @@
+.image {
+    border: 2px solid #fff;
+    overflow: hidden
+}
+
+.image img {
+    width: 100%;
+    height: 400px;
+    transition: all 2s ease-in-out
+}
+
+.image:hover img {
+    transform: scale(2, 2);
+    cursor: pointer
+}
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+.item {
+  margin-bottom:30px;
+}
+
+.item .box {
+  text-align:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  height:280px;
+  position:relative;
+  overflow:hidden;
+}
+
+.item .cover {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:gray;
+  transition:opacity 0.15s ease-in;
+  opacity:0;
+  padding-top:80px;
+  color:#fff;
+  text-shadow:1px 1px 1px rgba(0,0,0,0.15);
+  transition: 2s all ease;
+}
+
+.item:hover .cover {
+  opacity:0.7;
+}
+.item:hover .cover button {
+  opacity:1;
+}
+.item .name {
+  font-weight:bold;
+  margin-bottom:8px;
+}
+
+.social {
+  font-size:18px;
+}
+ 
+.social a {
+  color:inherit;
+  margin:0 10px;
+  display:inline-block;
+  opacity:0.7;
+}
+.social a:hover {
+  opacity:1;
+}
